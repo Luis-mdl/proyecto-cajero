@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero Automático</title>
+    <link rel="stylesheet" href="/assets/cajero.css">
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1 logo">BANCO CHILENO</span>
+        </div>
+      </nav>
+    <div id="loginForm">
+        <h2>Selecciona tu cuenta</h2>
+        <input type="text" id="accountName" placeholder="Nombre de la cuenta">
+        <input type="password" id="password" placeholder="Contraseña">
+        <button id="ingresar">Ingresar</button>
+    </div>
+
+    <div id="operations" style="display:none;">
+        <h2>Operaciones</h2>
+        <p id="balance">Saldo: $0</p>
+        <button id="ingresarMonto">Ingresar Monto</button>
+        <button id="retirarMonto">Retirar Monto</button>
+        <button id="salir">Salir</button>
+    </div>
+
+    <script src="/assets/cajero.js"></script>
+</body>
+</html>
